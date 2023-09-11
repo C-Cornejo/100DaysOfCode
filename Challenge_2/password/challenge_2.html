@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Challenge</title>
+    <!-- Referencia a Bootstrap en el css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
+</head>
+  <body>
+    <div class="container mb-1 mt-5">
+      <h1 class="display-2">Challenge #2</h1>
+      <small class="text-muted">100DaysOfCode</small>
+      <p>
+        <h6>JavaScript</h6> 
+        Verificar que una contraseña cumpla con lo siguiente
+        <ul>
+          <li>Debe incluir un numero</li>
+          <li>Debe ser mayor a 9 caracteres</li>
+          <li>Debe tener mayusculas</li>
+          <li>Debe 2 caracteres especiales</li>
+        </ul>
+
+      </p>
+    </div>
+   <div class="container mt-5">
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Contraseña</span>
+      <input type="text" class="form-control" placeholder="secret" aria-label="contraseña" aria-describedby="basic-addon1" id="txtContra">
+
+    </div>
+    
+    <button type="button" class="btn btn-outline-primary">Verificar</button>
+   
+    <div class="jumbotron mt-2 border border-dark-subtle bg-dark rounded">
+     <p class="text-light ts-4 p-2">
+      <samp class="fw-bolder">Cadena de caracteres resultante:</samp>
+      <br>
+      <samp  id="lblResultado"></samp>
+      </p>
+    </div>
+ 
+
+  
+  </div> <!-- END container -->
+    <!-- Referencia a Bootstrap en el js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
