@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Challenge</title>
+    <!-- Referencia a Bootstrap en el css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+</head>
+  <body>
+    <div class="container mb-1 mt-5">
+      <h1 class="display-2">Challenge #2</h1>
+      <small class="text-muted">100DaysOfCode tarea 3</small>
+      <h6>JavaScript</h6> 
+      <p>Dado el siguiente texto reemplazar una cadena de caracteres que se pida.</p>
+    </div>
+   <div class="container mt-5">
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Texto a buscar</span>
+      <input type="text" class="form-control" placeholder="Texto a buscar" aria-label="Username" aria-describedby="basic-addon1" id="txtBusqueda">
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Texto para reemplazar</span>
+      <input type="text" class="form-control" placeholder="Texto para reemplazar" aria-label="Texto para reemplazar" aria-describedby="basic-addon1" id="txtReemplazo">
+    </div>
+    <button type="button" onclick="reemplazar()" class="btn btn-outline-primary">Reemplazar</button>
+   
+    <div class="jumbotron mt-2 p-2 border border-dark-subtle bg-dark rounded text-light">
+     <samp>
+      
+      <br>Texto:
+      <br>
+        <p id="lblTexto" class="lx-3 ts-4 p-2">
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+         The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
+         'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors 
+         now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their 
+         infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the 
+         like).
+      </p>
+    </samp>
+    </div>
+  
+  </div> <!-- END container -->
+    <!-- Referencia a Bootstrap en el js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
