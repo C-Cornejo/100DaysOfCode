@@ -1,0 +1,22 @@
+
+
+.btn-agregar{
+    width: 4em;
+    height: 4em;
+
+}
+
+.contenedores{
+    height: 16.4em;    
+    overflow-y: scroll;
+}
+.foto{
+    height: 400px;
+    width: 325px;
+    border-radius: 3px;
+}
+
+
+.boleta-contenedor{
+    height:401px;
+}
