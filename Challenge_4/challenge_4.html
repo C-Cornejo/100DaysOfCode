@@ -49,17 +49,12 @@
                     <div class="card-header">
                     Cursos Inscritos
                     </div>
-                    <ul class="list-group list-group-flush contenedores">
-                    <li class="list-group-item">An item</li>
+                    <ul id="lsInscritos" class="list-group list-group-flush contenedores">
+                 <!--     <li class="list-group-item" id="materia_horario">An item</li>
                     <li class="list-group-item">A second item</li>
                     <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">An item</li> -->
+              
 
                     </ul>
                 </div>
@@ -67,11 +62,11 @@
             </div> <!-- END columnas-->
             <div class="col-lg col-9 mx-auto mt-4">
                 <div class="d-grid  col-8 mx-auto">
-                    <button class="btn btn-primary" type="button">Inscribir</button>
+                    <button id="btnInscribir" class="btn btn-primary" type="button">Inscribir</button>
                   </div>
         </div>
         <!-- START BOLETA -->
-        <div class="container mt-4">
+        <div  id="boleta" class="d-none container mt-4">
             <div class="card mb-3 boleta-contenedor">
                 <div class="row g-0">
                   <div class="col-md-3 d-flex justify-content-center">
@@ -80,13 +75,13 @@
                   <div class="col-md-9 d-flex flex-column">
                     <div class="card-body">
                       <h4 class="card-title">Boleta de incripcion</h4>
-                        <p class="card-text"><small class="fw-bold">Nombre: </small> Luna del catillo <br>
-                            <small class="fw-bold">Fecha: </small> 12-09/2023 <br>
-                            <ul>
-                                <li>Materia 1: Lunes y Martes 3:00pm a 5:00pm</li>
+                        <p class="card-text"><small class="fw-bold">Nombre: </small><span id="lblNombre"></span><br>
+                            <small class="fw-bold">Fecha: </small><span id="lblFecha"></span> <br>
+                            <ol id="lblDetalle">
+                               <!--  <li>Materia 1: Lunes y Martes 3:00pm a 5:00pm</li>
                                 <li>Materia 2: Miercoes y Jueves 3:00pm a 5:00pm</li>
-                                <li>Materia 3: Lunes y Viernes 9:00am a 11:00am</li>
-                            </ul>
+                                <li>Materia 3: Lunes y Viernes 9:00am a 11:00am</li> -->
+                            </ol>
                         </p>
                     </div>
                     <div class="card-footer d-flex ">
