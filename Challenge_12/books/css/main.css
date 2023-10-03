@@ -39,7 +39,7 @@ nav{
     
     border: black 2px solid;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     border-radius: 7px;
 }
 
@@ -61,12 +61,7 @@ nav{
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.contenido-item img
-{
-    height: 150px;
-    width: 125px;
-    flex-shrink: 0;
-}
+
 .pagina footer{
     display: flex;
     flex-direction: row;
@@ -79,13 +74,107 @@ nav{
     width: 1.7em;
 }
 
-nav img
-{
-    height: 10em;
-    width: 10em;
-} 
+
 nav span.titulo {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
     font-size: 1.8em;
+    line-height: 2em;
+}
+
+.precio-item{
+
+    font-weight: bolder;
+
+}
+
+@media (max-width:1440px) {
+    
+    nav img
+{
+    height: 10em;
+    width: 10em;
+} 
+.contenido-item img
+{
+    height: 100px;
+    width: 75px;
+    flex-shrink: 0;
+}
+    .cuadrilla{
+        
+        border: black 2px solid;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-radius: 7px;
+    }
+    
+    
+}
+
+@media (min-width:1441px) {
+    
+    nav img
+{
+    height: 7em;
+    width: 7em;
+} 
+    .contenido-item img
+    {
+        height: 150px;
+        width: 125px;
+        flex-shrink: 0;
+    }
+    .cuadrilla{
+        
+        border: black 2px solid;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        border-radius: 7px;
+    }
+}
+
+@media (max-width:1024px) {
+
+    nav img
+    {
+        height: 5em;
+        width: 5em;
+    } 
+    .contenido-item img
+    {
+        height: 125px;
+        width: 100px;
+        flex-shrink: 0;
+    }
+    
+    .cuadrilla{
+        
+        border: black 2px solid;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 7px;
+    }   
+}
+
+@media (max-width:720px) {
+    
+    .contenido-item img
+{
+    height: 100px;
+    width: 75px;
+    flex-shrink: 0;
+}
+
+    nav{
+        display: none;
+    }
+    
+    .cuadrilla{
+        
+        border: black 2px solid;
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 7px;
+    }   
 }
