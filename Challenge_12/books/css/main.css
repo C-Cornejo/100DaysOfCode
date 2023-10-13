@@ -185,10 +185,16 @@ nav span.titulo {
     width: 75px;
     flex-shrink: 0;
 }
+    .contenido{
+        flex-direction: column;
+        justify-content: center;
+    }
 
     nav{
-        display: none;
+        align-self: flex-start;
+        width: 100%;
     }
+    .pagina{width: 100%;}
     
     .cuadrilla{
         
