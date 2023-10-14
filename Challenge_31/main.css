@@ -1,0 +1,36 @@
+
+.challenge
+{
+    flex-grow: 1;
+}
+
+.contenedor-global{
+    min-height: 100vh;
+}
+
+.item ,.pregunta
+{
+    margin: 0.5em 0;
+}
+
+.respuesta.parrafo select
+{
+    width: auto; 
+}
+
+#challenge-header
+{
+    flex-grow: 1;
+}
+
+.estatus{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 3px;
+}
+
+.estatus div
+{
+    width: 1.5em;   
+    text-align: center;
+}
