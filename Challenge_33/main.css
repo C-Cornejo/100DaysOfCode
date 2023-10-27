@@ -1,0 +1,151 @@
+:root
+{
+    --ch-primario:  #A61C3C;
+    --ch-emphasis:  #F4AC45;
+    --ch-secundario: #25283D;
+}
+a
+{
+    color: var(--ch-primario);
+    font-weight: bold;
+}
+.contenedor-contenido
+{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contenedor-logo
+{
+    flex-grow: 1;
+}
+.contenido
+{
+    flex-grow:4;
+}
+
+.global
+{
+    min-height: 100vh;
+} 
+.panel
+{
+    flex-grow: 2;
+}
+.caja-buscador
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.caja-logo
+{
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--ch-primario);
+}
+.caja-buscador .row{
+        flex-grow: 1;
+}
+.contenedor-logo nav ul
+{
+    list-style-type: none;
+}
+
+.nav-item
+{
+    color: var(--ch-primario);
+    font-weight: bold;
+    border:initial;
+    border: 0.5px solid var(--ch-primario);
+
+}
+.nav-item:hover
+{
+    color: var(--ch-emphasis);
+    background-color: var(--ch-primario);
+}
+
+#txtBuscador 
+{
+    border: 1px solid var(--ch-primario);
+    color: var(--ch-primario);
+    font-weight: bold;
+}
+.icon
+{
+    color: var(--ch-primario);
+}
+
+.lista-items
+{
+    flex-grow: 1;
+   
+    display: grid;
+    gap: 1em;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 350px 350px;
+}
+.item
+{
+    border: 0.5px solid var(--ch-primario);
+    border-radius: 0.5em;
+}
+.contenedor-img-item
+{
+    display: flex;
+    justify-content: center;
+}
+.contenedor-img-item img
+{
+    align-self:center;
+    height: 175px;
+    width: 175px;
+}
+
+
+
+/*
+    Utilidades
+*/
+.btn-add
+{
+    background-color: var(--ch-primario);
+    color: var(--ch-emphasis);
+    font-size: medium;
+    font-weight: bold;
+    box-shadow: 2px 0 #25283D;
+}
+.btn-add:hover
+{
+    background-color: var(--ch-primario);
+    color: var(--ch-emphasis);
+    font-size: medium;
+}
+
+.borde-inicial
+{
+    border: initial;
+}
+.pagination li
+{
+    margin: 0 0.5em;
+}
+.pagination li a,.pagination li a:hover
+{
+    border-color:initial;
+    color:initial;
+    color: var(--ch-primario);
+    border:0.5px solid var(--ch-primario);
+    border-radius: 0.5em;
+}
+.descripcion-item
+{
+    color:var(--ch-secundario);
+    font-weight: bold;
+}
