@@ -1,0 +1,152 @@
+@font-face {
+    font-family: TechMono;
+    src: url('font/ShareTechMono-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root
+{
+    --ch-primario:#232627;
+    --ch-enfasis: #1cd294;
+    --ch-enfasis: #f7ce5b;
+    /* --ch-msj-bg: #1cd294; */
+    --ch-msj-bg: radial-gradient(circle, rgba(28,210,148,1) 24%, rgba(14,140,98,1) 96%);
+    --ch-msj-color: #f7ce5b;
+    --ch-btn-action: #c5a346;
+  /*  --ch-enfasis: #f7ce5b;
+     --ch-enfasis: #f7ce5b; 
+    --ch-enfasis: #dbd2e0;*/
+
+}
+
+.contenedor-global
+{
+    background-color: var(--ch-primario);
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    font-family: TechMono;
+
+}
+.panel-lateral
+{
+    flex-grow: 1;
+    border-right: 2px solid var(--ch-enfasis);
+}
+.contenedor-contenido
+{
+    flex-grow:2;
+}
+.contenido
+{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.contenido header,
+.contenido footer
+{
+    flex-grow: 1;
+}
+.contenido .mensajes
+{
+    flex-grow: 5;
+}
+
+.contacto-info
+{
+    border-bottom: 2px solid var(--ch-enfasis);
+}
+.nuevo-mensaje
+{
+    border-top: 2px solid var(--ch-enfasis);
+    display: flex;
+    align-items: center;
+}
+.fila-msj
+{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: var(--ch-enfasis);
+
+}
+
+.fila-nuevo-msj
+{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.mensaje
+{
+    /* background:  var(--ch-msj-bg);
+    color: var(--ch-primario); */
+    padding: 5px 15px;
+    border-radius: 8px;
+    margin: 15px 30px;
+
+    background: var(--ch-primario);
+    color: var(--ch-enfasis);
+    border: 0.5px solid var(--ch-enfasis);
+    /* box-shadow: 0px 0px 5px 2px var(--ch-enfasis); */
+
+}
+
+.msj-enviado
+{
+    justify-content: flex-start;
+}
+.msj-recibido
+{
+    justify-content: flex-end;
+}
+
+#txtMensaje{
+    width: 70%;
+    font-size: 1em;
+    background-color: var(--ch-primario);
+    border: 0.5px solid var(--ch-enfasis);
+    border-radius: 8px;
+    font-weight: bold;
+    text-indent: 0.5em;
+    color: var(--ch-enfasis);
+}
+#txtMensaje:focus-visible
+{
+
+    outline: 1.5px solid var(--ch-enfasis);
+    text-indent: 0.5em;
+
+}
+
+#txtMensaje::placeholder
+{
+    text-indent: 0.5em;
+}
+
+#btnEnviar{
+    width: 20%;
+    background-color: var(--ch-enfasis);
+    
+    color: var(--ch-primario);
+    font-size: 1em;
+    font-weight: bold;
+
+    height: 2.5em;
+    border: solid 1px var(--ch-enfasis);
+    border-radius: 5px;
+    margin: 5px 0;
+}
+#btnEnviar:active
+{
+    background-color: var(--ch-btn-action);
+    border-color:     var(--ch-btn-action);
+}
