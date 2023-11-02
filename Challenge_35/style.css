@@ -47,14 +47,22 @@
     flex-direction: column;
 }
 
+/*
+   En este caso para lograr el item scrollable
+   los elementos header y footer dentro contenedor 
+   llamado .contenido deben tener un alto minimo
+   con min-height y el contenedor .mensajes 
+*/
 .contenido header,
 .contenido footer
 {
     flex-grow: 1;
+    min-height: 70px;
 }
 .contenido .mensajes
 {
     flex-grow: 5;
+    overflow-y: scroll;
 }
 
 .contacto-info
@@ -149,4 +157,12 @@
 {
     background-color: var(--ch-btn-action);
     border-color:     var(--ch-btn-action);
+}
+
+.mensajes::-webkit-scrollbar{
+    background-color: var(--ch-primario);
+    width: 8px;
+}
+.mensajes::-webkit-scrollbar-thumb{
+    background-color: var(--ch-enfasis);
 }
