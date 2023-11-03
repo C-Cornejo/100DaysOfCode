@@ -7,16 +7,15 @@ let menu = document.getElementById("contactoDesplegable");
 btnDesplegable.addEventListener('click',(event)=>{
 
     menu.classList.remove('ocultar-desplegable');
-    console.log("event1");
+   // evitamos que el evento se propague para que el otro event listener no haga falso positivo
     event.stopPropagation();
 });
 
 document.addEventListener('click',(event)=>{
         if(!menu.contains(event.target) && event.target !== btnDesplegable)
         {
-            menu.classList.add("ocultar-desplegable");
-            console.log("event3");
+            menu.classList.add("ocultar-desplegable");    
         }
-        console.log("event2");
+
 });
 
