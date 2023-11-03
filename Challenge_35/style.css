@@ -29,7 +29,7 @@
     max-height: 100vh;
     display: flex;
     font-family: TechMono;
-
+    color: var(--ch-enfasis);
 }
 .panel-lateral
 {
@@ -68,6 +68,81 @@
 .contacto-info
 {
     border-bottom: 2px solid var(--ch-enfasis);
+    display: flex;
+}
+.contacto-detalles{
+    flex-grow:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contacto-detalles span{
+    display: block;
+}
+.contacto-foto
+{
+    /* flex:1 0 ; flex: flex-grow flex-shrink */
+    min-width: 60px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.contacto-foto img{
+    border-radius: 5px;
+}
+.contacto-opciones{
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto-desplegable{
+    position:absolute;
+    top: 60px;
+    right: 0;
+
+    height: 60px;
+    width: 150px;
+    /* border: 1px solid var(--ch-enfasis);
+    border-radius: 5px; */
+
+}
+.opciones-desplegable{ /* este es el ul que contiene los items del desplegable */
+    list-style:none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+}
+.opciones-desplegable li{
+    /* tamaño de las cintas que contiene el menu desplegable */
+    height: 30px;
+    width: 100%;
+}
+.opciones-desplegable li button{
+    border: none;
+    width: 100%;
+    height: 30px;
+    font-size: 1em;
+
+    color: var(--ch-primario);
+    background-color: var(--ch-enfasis);
+    font-weight: bold;
+    text-align: center;
+
+}
+.btn-superior{
+    border: none;
+    border-radius: 5px 5px 0px 0px;
+}
+.btn-inferior{
+    border:none;
+    border-radius: 0px 0px 5px 5px;
+}
+.opciones-desplegable button:active{
+    background-color: var(--ch-btn-action);
 }
 .nuevo-mensaje
 {
@@ -142,19 +217,38 @@
 
 #btnEnviar{
     width: 20%;
-    background-color: var(--ch-enfasis);
-    
-    color: var(--ch-primario);
     font-size: 1em;
-    font-weight: bold;
-
     height: 2.5em;
     border: solid 1px var(--ch-enfasis);
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin: 5px 0;
 }
-#btnEnviar:active
+
+#btnLlamar{
+    font-size: 2em;
+    height: 1.5em;
+    width: 1.2em;
+}
+
+
+#btnDesplegable{
+    height: 1.5em;
+    font-size: 2em;
+}
+.ocultar-desplegable
 {
+    display: none;
+}
+
+
+.btn{
+    color: var(--ch-primario);
+    background-color: var(--ch-enfasis);
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+.btn:active{
     background-color: var(--ch-btn-action);
     border-color:     var(--ch-btn-action);
 }

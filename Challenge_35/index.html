@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="style.css">
         <title>chat</title>
     </head>
@@ -15,7 +16,27 @@
             <div class="contenedor-contenido">
                 <div class="contenido">
                     <header class="contacto-info">
-
+                        <div class="contacto-foto ">
+                            <img src="img/chicken_icon.jpg" alt="" height="45px" width="45px">
+                        </div>
+                        <div class="contacto-detalles">
+                            <span class="contacto-nombre">Fabricio</span>
+                            <span class="contacto-estado">Living la vida loca</span>
+                        </div>
+                        <div class="contacto-opciones ">
+                            <button class="btn" id="btnLlamar">
+                                <i class="bi bi-telephone-fill"></i>
+                            </button>
+                            <button class="btn" id="btnDesplegable">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+                            <div id="contactoDesplegable" class="contacto-desplegable ocultar-desplegable">
+                                <ul class="opciones-desplegable">
+                                    <li><button  class="btn-superior">Silenciar</button></li>
+                                    <li><button class="btn-inferior">Eliminar</button></li>
+                                </ul>
+                            </div>
+                        </div>
                     </header>
                     <div class="mensajes">
                         <div class="fila-msj msj-recibido">
@@ -86,7 +107,7 @@
                     <footer class="nuevo-mensaje">
                         <div class="fila-nuevo-msj">
                             <input type="text" name="txtMensaje" id="txtMensaje" placeholder="Escribe un mensaje..." />
-                            <button type="button" id="btnEnviar">Enviar</button>
+                            <button class="btn" type="button" id="btnEnviar">Enviar</button>
                         </div>
                     </footer>
                 </div>
