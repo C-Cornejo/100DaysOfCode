@@ -10,15 +10,11 @@
 :root
 {
     --ch-primario:#232627;
-    --ch-enfasis: #1cd294;
     --ch-enfasis: #f7ce5b;
-    /* --ch-msj-bg: #1cd294; */
+
     --ch-msj-bg: radial-gradient(circle, rgba(28,210,148,1) 24%, rgba(14,140,98,1) 96%);
-    --ch-msj-color: #f7ce5b;
     --ch-btn-action: #c5a346;
-  /*  --ch-enfasis: #f7ce5b;
-     --ch-enfasis: #f7ce5b; 
-    --ch-enfasis: #dbd2e0;*/
+
 
 }
 
@@ -35,6 +31,9 @@
 {
     flex-grow: 1;
     border-right: 2px solid var(--ch-enfasis);
+
+    display: flex;
+    flex-direction: column;
 }
 .contenedor-contenido
 {
@@ -75,6 +74,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    padding-left: 5px;
 }
 .contacto-detalles span{
     display: block;
@@ -87,7 +88,8 @@
     justify-content:center;
     align-items: center;
 }
-.contacto-foto img{
+
+ img{
     border-radius: 5px;
 }
 .contacto-opciones{
@@ -253,10 +255,43 @@
     border-color:     var(--ch-btn-action);
 }
 
-.mensajes::-webkit-scrollbar{
+.mensajes::-webkit-scrollbar,
+.chats-info::-webkit-scrollbar
+{
     background-color: var(--ch-primario);
     width: 8px;
 }
-.mensajes::-webkit-scrollbar-thumb{
+.mensajes::-webkit-scrollbar-thumb,
+.chats-info::-webkit-scrollbar-thumb{
     background-color: var(--ch-enfasis);
+}
+
+.chat
+{
+    display:flex;
+    padding:5px 0px;
+    border-bottom: 1px solid var(--ch-enfasis);
+}
+
+.chats-info{
+    flex-grow: 2;
+
+    overflow-y: scroll;
+    display: flex;
+    flex-direction:column;
+}
+
+.chats-info:hover
+{
+    cursor: pointer;
+}
+
+.perfil-nav{
+    flex-grow:1;
+    min-height: 75px;
+
+    display: flex;
+    flex-direction: row;
+    
+    border-bottom: 3px solid var(--ch-enfasis);
 }
